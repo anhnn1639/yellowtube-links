@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="vi">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mở video · YellowTube</title>
+<main><p id="message">Liên kết video không hợp lệ.</p><a id="open" hidden>Mở video</a></main>
+<script>
+const id = new URLSearchParams(location.search).get("id");
+if (id && /^[A-Za-z0-9_-]{11}$/.test(id)) {
+  const link = document.getElementById("open");
+  link.href = "https://www.youtube.com/watch?v=" + id;
+  link.hidden = false;
+  document.getElementById("message").textContent = "Đang mở video…";
+  location.replace(link.href);
+}
+</script>
+</html>

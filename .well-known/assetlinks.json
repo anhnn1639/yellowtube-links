@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "vn.yellowtube.player",
+      "sha256_cert_fingerprints": [
+        "05:EB:1F:80:BA:73:22:F3:47:50:0A:A2:DD:99:46:80:BB:B7:F5:23:73:B3:6C:AE:EB:FD:E0:7B:1E:16:4F:11"
+      ]
+    }
+  }
+]
